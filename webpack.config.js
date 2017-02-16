@@ -68,6 +68,11 @@ const config = {
     new CopyWebpackPlugin([{ from: 'vendors', to: 'vendors' }]),
     new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
+    })
   ],
 };
 
