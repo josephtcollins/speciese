@@ -1,9 +1,26 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './components/topbar.scss';
+@import './components/login.scss';
+
+// color palette
+$gold: #FFFB00;
+$lightgreen: #56CC14;
+$green: #5E993D;
+$purple: #6240ff;
+$blue: #1425CC;
 
 $color: #262828;
 
 body {
   color: $color;
+}
+
+.bracket-svg {
+  width: 900px;
+  height: 200px;
+  max-width: 1190px;
+  float: none;
+  margin: 0 auto;
 }
 
 // todo maybe change
@@ -13,16 +30,30 @@ body {
 }
 
 .child-card-row {
-  max-width: 1030px;
+  max-width: 1190px;
   float: none;
   margin: 0 auto;
 }
 
 .box {
+  h3 {
+    margin-top: 10px;
+    color: $blue;
+    font-size: 14pt;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+  }
+  cursor: pointer;
   text-align: center;
-  width: 220px;
-  height: 260px;
+  width: 260px;
+  height: 280px;
   border-radius: 4px;
+}
+
+.box-content {
+  padding: 10px 10px;
 }
 
 .row-box {
@@ -30,29 +61,17 @@ body {
   margin: 25px 15px;
 }
 
-.box h3 {
-  font-family: 'Didact Gothic', sans-serif;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 10px;
-  color:#fff;
+.box1 {
+  background-color: #F8FFF2;
 }
-.box1{
-  background-color: #EBA39E;
-}
+
 .shadow1, .shadow2, .shadow3,.shadow4,.shadow5,.shadow6,.shadow7,.shadow8{
   position:relative;
 }
 .shadow1,.shadow2,.shadow3,.shadow4,.shadow5,.shadow6,.shadow7,.shadow8{
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
 }
-/*****************************************************************dashed border
-****************************************************************/
 
-
-/****************************************************************
-*styling shadows
-****************************************************************/
 .shadow1:before, .shadow1:after{
   position:absolute;
   content:"";
@@ -72,4 +91,16 @@ body {
   -moz-transform: rotate(6deg);
   transform: rotate(6deg);
   right: 15px;left: auto;
+}
+
+.special-green {
+  box-shadow: 1px 1px 10px 1px $lightgreen;
+}
+
+.special-gold {
+  box-shadow: 1px 1px 10px 1px $gold;
+}
+
+.special-purple {
+  box-shadow: 1px 1px 10px 1px $gold;
 }
