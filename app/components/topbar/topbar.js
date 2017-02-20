@@ -8,6 +8,7 @@ export default class TopBar extends React.Component {
         <li><a href="#news">News</a></li>
         <li><a href="#login">Login</a></li>
         <li><a href="#account">Account</a></li>
+        <li><a href="#signup">Sign Up</a></li>
       </ul>
     )
   }

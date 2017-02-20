@@ -5,6 +5,7 @@ import { createHashHistory } from 'history';
 import App from '../components/App';
 import Profile from '../components/profile/profile';
 import Login from '../components/Login';
+import SignUpPage from '../components/SignUpPage';
 
 const history = useRouterHistory(createHashHistory)({ queryKey: false });
 
@@ -15,6 +16,7 @@ export default class Root extends Component {
         <Route path="/" component={App} />
         <Route path="/account" component={Profile} />
         <Route path="/login" component={Login} />
+        <Route path="/signup" component={SignUpPage} />
       </Router>
     );
   }
