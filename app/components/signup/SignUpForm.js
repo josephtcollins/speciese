@@ -18,14 +18,17 @@ const SignUpForm = ({
       <h2>Signup Form</h2>
       {errors.summary && <p className="error-message">{errors.summary}</p>}
 
+      <label><b>Name</b></label>
+      <input type="text" onChange={onChange} placeholder="Enter Name" name="name" required />
+
       <label><b>Email</b></label>
-      <input type="text" errorText={errors.name} onChange={onChange} placeholder="Enter Email" name="email" required />
+      <input type="text" onChange={onChange} placeholder="Enter Email" name="email" required />
 
       <label><b>Password</b></label>
-      <input type="password" onChange={onChange} placeholder="Enter Password" name="psw" required />
+      <input type="password" onChange={onChange} placeholder="Enter Password" name="password" required />
 
       <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+      <input type="password" placeholder="Repeat Password" name="password" required />
       <input type="checkbox" onChange={onChange} checked="checked" /> Remember me
       <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
